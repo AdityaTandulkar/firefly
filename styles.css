@@ -150,8 +150,24 @@ footer .follow-us .social-wrapper-outer .social-wrapper img{
 }
 
 
+.modal-wrapper{
+    width: 100%;
+    height: 100vh;
+    background: #00000095;
+    border: 1px solid red;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .modal{
     width: 80%;
+    height: 80vh;
     border: 1px solid black;
     background-color: #fff;
     display: flex;
@@ -159,14 +175,22 @@ footer .follow-us .social-wrapper-outer .social-wrapper img{
 
 .modal .img-wrapper{
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.modal .img-wrapper > img{
+.modal .img-wrapper .img-preview{
+    width: 90%;
+}
+
+.modal .img-wrapper .img-preview img{
     width: 100%;
 }
 
 .modal .img-wrapper .related-img-wrapper{
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -188,10 +212,89 @@ footer .follow-us .social-wrapper-outer .social-wrapper img{
 
 .modal .desc-btn-wrapper .desc{
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.modal .desc-btn-wrapper .desc h2{
+
+.modal .desc-btn-wrapper .desc .heading-closebtn-wrapper{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.close-btn:hover{
+    fill: #000;
+}
+
+.modal .desc-btn-wrapper .desc div h2{
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+}
+
+.modal .desc-btn-wrapper .desc .mrp-wrapper{
+    width: 80%;
+}
+
+.modal .desc-btn-wrapper .desc .mrp-wrapper h3{
     font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.4rem;
 }
+
+.modal .desc-btn-wrapper .desc .mrp-wrapper h3:last-of-type{
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 3.2rem;
+}
+
+.modal .desc-btn-wrapper .desc .product-desc{
+    width: 80%;
+    padding-top: 1rem;
+    border-top: 2px dotted #F27121;
+}
+
+.modal .desc-btn-wrapper .desc .product-content{
+    width: 80%;
+    padding-top: 1rem;
+    border-top: 2px dotted #F27121;
+}
+
+.modal .desc-btn-wrapper .desc .product-content div{
+    display: flex;
+}
+.modal .desc-btn-wrapper .desc .product-content div img{
+    margin-right: 1rem;
+}
+
+.modal .desc-btn-wrapper .desc .shipping-time{
+    width: 80%;
+    padding-top: 1rem;
+    border-top: 2px dotted #F27121;
+}
+
+.heading-h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    padding-bottom: .5rem;
+}
+
+.sub-heading-p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    padding-bottom: .2rem;
+}
+
+.modal .desc-btn-wrapper .btn{
+    width: 80%;
+}
+
 /* classes */
 
 .hero-text{
@@ -236,4 +339,8 @@ footer .follow-us .social-wrapper-outer .social-wrapper img{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.hidden {
+    display: none;
 }

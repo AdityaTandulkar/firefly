@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="myscripts.js" defer></script>
+    <script src="app.js"></script>
     <title>FireFly</title>
   </head>
   <body>
@@ -53,7 +53,7 @@
                     <img src="assets/card-img.png" alt="card-img">
                     <div class="title-btn-wrapper">
                         <h3>Raju Rassibomb</h3>
-                        <button class="btn bg-red">Quick View</button>
+                        <button class="btn bg-red" onclick="openModal()">Quick View</button>
                     </div>
                 </div>
 
@@ -61,7 +61,7 @@
                     <img src="assets/card-img.png" alt="card-img">
                     <div class="title-btn-wrapper">
                         <h3>Ladiyon ki Rani Chani</h3>
-                        <button class="btn bg-red">Quick View</button>
+                        <button class="btn bg-red"  onclick="openModal('Ladiyon ki Rani Chani', 'Ladiyon ki Dreams/-')">Quick View</button>
                     </div>
                 </div>
             </div>
@@ -71,65 +71,73 @@
             <img src="assets/line-full.svg" alt="full-line">
         </div>
 
-        <!-- <div class="modal">
-            <div class="img-wrapper">
-                <img src="assets/Beej-Patakha.png" alt="beej-patakha">
-
-                <div class="related-img-wrapper">
-                    <div>
+        <div class="modal-wrapper hidden">
+            <div class="modal">
+                <div class="img-wrapper">
+                    <div class="img-preview">
                         <img src="assets/Beej-Patakha.png" alt="beej-patakha">
                     </div>
-                    <div>
-                        <img src="assets/crackers.png" alt="cracker">
-                    </div>
-                    <div>
-                        <img src="assets/crackers.png" alt="cracker">
-                    </div>
-                    <div>
-                        <img src="assets/crackers.png" alt="cracker">
+    
+                    <div class="related-img-wrapper">
+                        <div>
+                            <img src="assets/Beej-Patakha.png" alt="beej-patakha">
+                        </div>
+                        <div>
+                            <img src="assets/crackers.png" alt="cracker">
+                        </div>
+                        <div>
+                            <img src="assets/crackers.png" alt="cracker">
+                        </div>
+                        <div>
+                            <img src="assets/crackers.png" alt="cracker">
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="desc-btn-wrapper">
-                <div class="desc">
-                    <h2>Raju Rassibomb</h2>
-
-                    <div>
-                        <h3>MRP : </h3>
-                        <h3>MRP : Raju's Dreams /-</h3>
-                    </div>
-
-                    <div class="product-desc">
-                        <h3>Product Description:</h3>
-                        <p>This product packs an extra punch, thanks to the literal blood, sweat and tears of a young boy. </p>
-                    </div>
-
-                    <div class="product-content">
-                        <h3>Product Contents:</h3>
-                        <div>
-                            <img src="assets/star.svg" alt="star">
-                            <p>10 hand-hurting pieces of rassi bombs</p>
+    
+                <div class="desc-btn-wrapper">
+                    <div class="desc">
+                        <div class="heading-closebtn-wrapper">
+                            <h2 class="name">Raju Rassibomb</h2>
+                            <img class="close-btn" src="assets/close.svg" alt="close" onclick="closeModal()">
                         </div>
-                        <div>
-                            <img src="assets/star.svg" alt="star">
-                            <p>Jilled with great pain</p>
+    
+                        <div class="mrp-wrapper">
+                            <h3>MRP : </h3>
+                            <h3 class="mrp">MRP : Raju's Dreams /-</h3>
                         </div>
-                        <div>
-                            <img src="assets/star.svg" alt="star">
-                            <p>Raju's hopes</p>
+    
+                        <div class="product-desc">
+                            <h3 class="heading-h3">Product Description:</h3>
+                            <p class="sub-heading-p">This product packs an extra punch, thanks to the literal blood, sweat and tears of a young boy. </p>
                         </div>
+    
+                        <div class="product-content">
+                            <h3 class="heading-h3">Product Contents:</h3>
+                            <div>
+                                <img src="assets/star.svg" alt="star">
+                                <p class="sub-heading-p">10 hand-hurting pieces of rassi bombs</p>
+                            </div>
+                            <div>
+                                <img src="assets/star.svg" alt="star">
+                                <p class="sub-heading-p">Jilled with great pain</p>
+                            </div>
+                            <div>
+                                <img src="assets/star.svg" alt="star">
+                                <p class="sub-heading-p">Raju's hopes</p>
+                            </div>
+                        </div>
+    
+                        <div class="shipping-time">
+                            <h3 class="heading-h3">Shipping Time:</h3>
+                            <p class="sub-heading-p">Before Raju understands that his dreams do not matter</p>
+                        </div>
+    
+                        <button class="btn bg-red">Choose Now</button>
                     </div>
-
-                    <div class="shipping-time">
-                        <h3>Shipping Time:</h3>
-                        <p>Before Raju understands that his dreams do not matter</p>
-                    </div>
+    
                 </div>
-
-                <button class="btn bg red">Choose Now</button>
             </div>
-        </div> -->
+        </div>
     </main>
 
     <footer>
