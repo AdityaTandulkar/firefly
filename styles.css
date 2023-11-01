@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+main{
+    position: relative;
+}
+
+.title{
+    width: 100vw;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    border-bottom: 1px solid #FF777766;
+    background: #1C1C1C33;
+    z-index: 99;
+}
+
+.title .logo{
+    padding: 1rem 0 1rem 13rem;
+}
+
+.hero{
+    width: 100%;
+    height: 70vh;
+    background: url("assets/hero.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero .text-btn-wrapper{
+    position: absolute;
+    bottom: 7rem;
+    left: 13rem;
+}
+
+.hero .text-wrapper{
+    padding-bottom: 5rem;
+}
+
+.about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content{
+    width: 60%;
+}
+
+.about-content p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    text-align: center;
+}
+
+.about-content h3{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.products{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products .card-wrapper{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products .card{
+    width: 58.4rem;
+    height: 53rem;
+    border: 1px solid #CECECE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.products .card h3{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+}
+
+.products .card .title-btn-wrapper{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.full-line-wrapper{
+    width: 100%;
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-line-wrapper img{
+    width: 80%;
+}
+
+footer img{
+    width: 100%;
+}
+
+footer .follow-us{
+    width: 100%;
+    background-color: #25A769;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .follow-us img{
+    width: 5.5rem;
+    height: 7.8rem;
+}
+
+footer .follow-us .social-wrapper-outer h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: #ECE14C;
+    line-height: 2.4rem;
+    text-align: center;
+}
+footer .follow-us .social-wrapper-outer .social-wrapper img{
+    width: 3.6rem;
+    height: 3.6rem;
+    margin: 0 1rem;
+}
+
+
+.modal{
+    width: 80%;
+    border: 1px solid black;
+    background-color: #fff;
+    display: flex;
+}
+
+.modal .img-wrapper{
+    width: 70%;
+}
+
+.modal .img-wrapper > img{
+    width: 100%;
+}
+
+.modal .img-wrapper .related-img-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal .img-wrapper .related-img-wrapper div{
+    width: 22%;
+    height: 10rem;
+}
+
+.modal .img-wrapper .related-img-wrapper div > img{
+    width: 100%;
+    height: 100%;
+}
+
+.modal .desc-btn-wrapper{
+    width: 30%;
+}
+
+.modal .desc-btn-wrapper .desc{
+    width: 100%;
+}
+.modal .desc-btn-wrapper .desc h2{
+    font-size: 2rem;
+}
+/* classes */
+
+.hero-text{
+    font-size: 4.4rem;
+    font-weight: 600;
+    line-height: 5.6rem;
+    color: #fff;
+}
+
+.btn{
+    width: 21.1rem;
+    height: 52px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.bg-white{
+    background-color: #fff;
+    color: #FE0000;
+}
+
+.bg-red{
+    background-color: #FE0000;
+    color: #fff;
+}
+
+.heading{
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 4.4rem;
+    text-align: center;
+    color: #F27121;
+}
+
+.line-heading-wrapper{
+    width: 80%;
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
